@@ -20,7 +20,6 @@ body{
     height: 80px;
      width: 100%;
     background-color:#080b12;
-    opacity: 50%;
     text-align: end;
 }
 
@@ -33,7 +32,14 @@ body{
     width: 180px;
     height: 40px;
     border-radius: 25px;
+}
 
+.top-container button:hover{
+    width: 200px;
+    height:50px;
+    cursor: pointer;
+    background-color:#81b71a;
+    border: #81b71a;
 }
 
 .left-container{
@@ -46,14 +52,29 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+.middle-container ul li{
+    color:#a3a3a3;
+    opacity: 40%;
+}
+
+.middle-container ul li:hover{
+    color: white;
+    opacity: 100%;
+    cursor: pointer;
+}
+
  .left-container li>i{
     margin-inline: 10px;
  }
 
 
 .left-container li{
-  color: #79a4b7;
+  color:#a3a3a3;
   margin:20px
+}
+
+.left-container li button{
+    margin-inline: 5px;
 }
 
 .left-container li button{
@@ -67,7 +88,7 @@ body{
 .left-container div{
     margin-top: 120px;
     margin-inline: 20px;
-    color: #79a4b7;
+    color:#a3a3a3;
 }
 
 hr{
@@ -80,6 +101,22 @@ hr{
     font-size: 30px;
     margin-inline: 20px;
     margin-top: 10px;
+}
+
+.left-container ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.left-container div:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.left-container button:hover{
+    color: white;
+    cursor: pointer;
+   
 }
 
 .middle-container{
@@ -108,16 +145,6 @@ hr{
     margin-inline: 10px;
 }
 
-.bottom-container{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    height: 80px;
-    width: 100%;
-    background-color: #282828;
-}
-
 ul{
     list-style:none ;
 }
@@ -131,6 +158,7 @@ ul{
     margin-top: 20px;
 }
 
+
 .card img{
     width: 100%;
 }
@@ -140,8 +168,8 @@ ul{
 
 .card div{
     margin-top: 10px;
-    color: #79a4b7;
-    opacity: 30%;
+    color:#a3a3a3;
+    opacity: 40%;
 }
 
 .middle-container h2{
@@ -150,8 +178,8 @@ ul{
 
 .middle-container p{
     margin: 15px;
-    color:#79a4b7;
-    opacity: 30%;
+    color:#a3a3a3;
+    opacity: 40%;
 }
 
 .cards-container2{
@@ -160,11 +188,14 @@ ul{
 }
 
 .card2{
-    margin-left: 20px;
+    margin-left: 20px;   
+    width: 14%;
+    max-width: 1000px;
 }
 
 .card2 img{
     width: 100%;
+   
 }
 
 .card2 h3{
@@ -182,6 +213,102 @@ ul{
 
 .card3 img{
     border-radius: 50%;
-    overflow: hidden;
+    position: relative;
+    bottom: 0;
     height: 200px;
+}
+
+.bottom-container{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    height: 80px;
+    width: 100%;
+    background-color: #282828;
+    justify-content: space-between ;
+}
+
+.left-item{
+    display: flex;
+    margin-inline: 10px;
+}
+
+.left-item-image{
+    width: 33%;
+}
+.left-item-image img{
+    width: 100%;
+}
+.name-left-item{
+    margin-top: 20px;
+}
+.item{
+    margin: 40px;
+}
+
+.item i{
+    margin-inline: 5px;
+}
+
+.item2-container{
+    display: flex;  
+    margin-left: 150px;
+}
+
+.item2-container i{
+    margin-inline: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.barra{
+    display: flex;
+}
+
+.barra-button button{
+    width: 125px;
+    height: 10px;
+}
+
+.middle-item{
+  margin-right: 150px;
+}
+
+.barra-button2 button{
+    width: 450px;
+    height: 10px;
+    background-color: #5a5a5a;
+    border: solid 0px;
+    border-end-end-radius: 25px ;
+    
+}
+.seconds{
+    margin-top: 5px;
+    margin-inline: 5px;
+}
+
+.right-item{
+    display: flex;
+    margin: 20px;
+    margin-top: 30px;
+    
+}
+
+.barra-button3 button{
+    width: 50px;
+    height: 10px;
+}
+
+.barra-button4 button{
+    width: 100px;
+    height: 10px;
+    background-color:#5a5a5a;
+    border: solid 0px;
+    border-end-end-radius:25px ;
+}
+
+.right-item i{
+    margin-top: 5px;
+    margin-inline: 10px;
 }
