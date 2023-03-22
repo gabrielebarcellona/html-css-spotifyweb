@@ -52,17 +52,6 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-.middle-container ul li{
-    color:#a3a3a3;
-    opacity: 40%;
-}
-
-.middle-container ul li:hover{
-    color: white;
-    opacity: 100%;
-    cursor: pointer;
-}
-
  .left-container li>i{
     margin-inline: 10px;
  }
@@ -130,6 +119,17 @@ hr{
     padding-top: 80px;
 }
 
+.middle-container ul li{
+    color:#a3a3a3;
+    opacity: 40%;
+}
+
+.middle-container ul li:hover{
+    color: white;
+    opacity: 100%;
+    cursor: pointer;
+}
+
 .nav-container{
     display: flex;
     justify-content: center;
@@ -158,6 +158,27 @@ ul{
     margin-top: 20px;
 }
 
+.card{
+    position: relative;
+}
+
+.card i{
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    left: 60px;
+    top: 70px;
+}
+
+.card img:hover {
+    opacity: 20%;
+    cursor: pointer;
+    display: block;
+}
+
+.card img:hover + i{
+    display: block;
+}
 
 .card img{
     width: 100%;
