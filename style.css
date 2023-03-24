@@ -57,10 +57,63 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+.active2::after{
+    content: "";
+    display: block;
+   position: absolute;
+    top: 96px;
+    left: 20px;
+     width: 5px;
+     height: 20px;
+    background-color: greenyellow;
+    border: solid 0 greenyellow;
+    
+   
+}
+
+@media (max-width:768px){
+    .card{
+        width: calc((100% - 3rem)/ 4);
+    }
+}
 
 @media (max-width:480px){
-    
-}
+    .card{
+        width: calc((100% - 1rem)/ 2);
+    }
+
+    .left-container{
+        width: 70px;
+        overflow: hidden;
+    }
+    .middle-container{
+        margin-left: -180px;
+    }
+
+    .parol,
+    .flex-container ul li button{
+        display: none; 
+    }
+
+    .flex-container ul li{
+        margin-left: -5px;
+    }
+
+    .active2::after{
+        display: none;
+    }
+
+    .flex-container ul li img{
+       width: 160px;
+       margin-left: -21px;
+    }
+    .nav-container{
+        margin-top: 20px;
+    }
+
+    }
+
+
 
  .left-container li>i{
     margin-inline: 10px;
@@ -105,19 +158,6 @@ hr{
     margin-inline: 20px;
 }
 
-.active2::after{
-    content: "";
-    display: block;
-   position: absolute;
-    top: 96px;
-    left: 20px;
-     width: 5px;
-     height: 20px;
-    background-color: greenyellow;
-    border: solid 0 greenyellow;
-    
-   
-}
 
 .flex-container2 div i{
    margin-inline: 10px;
@@ -141,6 +181,14 @@ hr{
     color: white;
     cursor: pointer;
    
+}
+
+@media(max-width:480px){
+    .flex-container2 div i,
+    .flex-container2 p i{
+        margin-left: -5px;
+        margin-top: 15px;
+    }
 }
 
 .middle-container{
@@ -171,13 +219,6 @@ hr{
     padding-bottom: 30px;
 }
 
-@media (max-width:768px){
-    .nav-container ul li{
-       
-    }
-        
-    
-}
 
 .nav-container ul{
     display: flex;
@@ -216,17 +257,11 @@ ul{
     margin-top: 20px;
 }
 
-@media (max-width:768px){
-    .card{
-        width: calc((100% - 3rem)/ 4);
-    }
+.flex-container ul li{
+    display: flex;
 }
 
-@media (max-width:480px){
-    .card{
-        width: calc((100% - 1rem)/ 2);
-    }
-}
+   
 
 .card{
     position: relative;
