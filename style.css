@@ -35,15 +35,19 @@ body{
     border-radius: 25px;
 }
 
-.top-container button:hover{
-    width: 200px;
-    height:50px;
+.top-container button:hover {
+   transform: scale(1.2,1.2);
     cursor: pointer;
     background-color:#81b71a;
     border: #81b71a;
 }
 
+
+
 .left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     left: 0;
     top: 0;
@@ -57,6 +61,13 @@ body{
     margin-inline: 10px;
  }
 
+ .flex-container2{
+    margin-bottom: 90px;
+ }
+
+.flex-container ul li{
+    content: max-content;
+}
 
 .left-container li{
   color:#a3a3a3;
@@ -76,7 +87,6 @@ body{
 }
 
 .left-container div{
-    margin-top: 120px;
     margin-inline: 20px;
     color:#a3a3a3;
 }
@@ -90,7 +100,28 @@ hr{
 .left-container p{
     font-size: 30px;
     margin-inline: 20px;
-    margin-top: 10px;
+}
+
+.active2::after{
+    content: "";
+    display: block;
+   position: absolute;
+    top: 96px;
+    left: 20px;
+     width: 5px;
+     height: 20px;
+    background-color: greenyellow;
+    border: solid 0 greenyellow;
+    
+   
+}
+
+.flex-container2 div i{
+   margin-inline: 10px;
+}
+
+.flex-container2 p i{
+    margin-inline: 10px;
 }
 
 .left-container ul li:hover{
@@ -120,9 +151,9 @@ hr{
     padding-top: 80px;
 }
 
+
 .middle-container ul li{
     color:#a3a3a3;
-    opacity: 40%;
 }
 
 .middle-container ul li:hover{
@@ -137,13 +168,35 @@ hr{
     padding-bottom: 30px;
 }
 
+@media (max-width:768px){
+    .nav-container ul li{
+       
+    }
+        
+    
+}
+
 .nav-container ul{
     display: flex;
     margin-top: 10px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-container li{
     margin-inline: 10px;
+}
+
+.active::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 30%;
+    background-color: greenyellow;
+    border: solid 0 greenyellow;
+    border-radius: 20px;
+    margin: auto;
 }
 
 ul{
@@ -159,8 +212,24 @@ ul{
     margin-top: 20px;
 }
 
+@media (max-width:768px){
+    .cards-container{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc((100% - 3rem)/ 4);
+    }
+}
+
+@media (max-width:480px){
+    .card{
+        width: calc((100% - 1rem)/ 2);
+    }
+}
+
 .card{
     position: relative;
+    
 }
 
 .card i{
@@ -178,6 +247,27 @@ ul{
 }
 
 .card img:hover + i{
+    display: block;
+}
+.card2{
+    position: relative;
+}
+
+.card2 i{
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    left: 50px;
+    top: 60px;
+}
+
+.card2 img:hover {
+    opacity: 20%;
+    cursor: pointer;
+    display: block;
+}
+
+.card2 img:hover + i{
     display: block;
 }
 
@@ -207,12 +297,13 @@ ul{
 .cards-container2{
     display: flex;
     gap: 1rem;
+    width: 33%;
 }
 
 .card2{
     margin-left: 20px;   
-    width: 14%;
-    max-width: 1000px;
+    width: calc((100% - 1rem) / 2);
+    
 }
 
 .card2 img{
@@ -227,17 +318,19 @@ ul{
 .cards-container3{
     display: flex;
     gap: 1rem;
+    width: 33%;
 }
 
 .card3{
     margin-left:20px ;
+    width: calc((100% - 1rem) / 2);
+
 }
 
 .card3 img{
-    border-radius: 50%;
-    position: relative;
-    bottom: 0;
-    height: 200px;
+border-radius: 50%;
+width: 100%;
+   
 }
 
 .bottom-container{
@@ -258,7 +351,7 @@ ul{
 }
 
 .left-item-image{
-    width: 33%;
+    width: 33%;  
 }
 .left-item-image img{
     width: 100%;
@@ -277,7 +370,7 @@ ul{
 
 .item2-container{
     display: flex;  
-    margin-left: 150px;
+    margin-left: 140px;
 }
 
 .item2-container i{
@@ -285,6 +378,7 @@ ul{
     font-size: 25px;
     margin-top: 10px;
     opacity: 50%;
+   
 }
 .barra{
     display: flex;
