@@ -57,6 +57,11 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+
+@media (max-width:480px){
+    
+}
+
  .left-container li>i{
     margin-inline: 10px;
  }
@@ -65,9 +70,7 @@ body{
     margin-bottom: 90px;
  }
 
-.flex-container ul li{
-    content: max-content;
-}
+
 
 .left-container li{
   color:#a3a3a3;
@@ -206,6 +209,7 @@ ul{
 
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     max-width: 1250px;
     margin: auto;
@@ -213,9 +217,6 @@ ul{
 }
 
 @media (max-width:768px){
-    .cards-container{
-        flex-wrap: wrap;
-    }
     .card{
         width: calc((100% - 3rem)/ 4);
     }
@@ -229,6 +230,7 @@ ul{
 
 .card{
     position: relative;
+    width: calc((100% - 5rem) / 6);
     
 }
 
@@ -249,7 +251,7 @@ ul{
 .card img:hover + i{
     display: block;
 }
-.card2{
+.card2 img{
     position: relative;
 }
 
